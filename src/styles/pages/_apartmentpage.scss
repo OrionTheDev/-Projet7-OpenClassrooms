@@ -68,6 +68,9 @@
                         right: 43px;
                   }
             }
+            .arrowInvisible {
+                  display: none;
+            }
 
             .imgCarrousel {
                   width: 100%;
@@ -266,9 +269,12 @@
       font-size: 18px;
       font-weight: 500;
       color: #ffffff;
-      //background-color: rgba(0, 0, 0, 0.5);
       padding: 5px 10px;
       border-radius: 10px;
+
+      @media screen and (max-width: 768px) {
+            display: none;
+      }
 }
 
 .counter::before {

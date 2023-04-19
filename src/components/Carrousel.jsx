@@ -19,7 +19,7 @@ const Carrousel = ({ imageCarrousel }) => {
       return (
             <div className="image__header">
                   <img
-                        className="arrowBack"
+                        className={(imageCarrousel.length !== 1) ? "arrowBack": "arrowInvisible"}
                         src={arrow_back}
                         alt=""
                         onClick={decrementImage}
@@ -30,7 +30,7 @@ const Carrousel = ({ imageCarrousel }) => {
                         alt=""
                   />
                   <img
-                        className="arrowForward"
+                        className={(imageCarrousel.length !== 1) ? "arrowForward": "arrowInvisible"}
                         src={arrow_forward}
                         alt=""
                         onClick={incrementImage}
