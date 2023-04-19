@@ -1,0 +1,49 @@
+.lodgement {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      background-color: #fe6060;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      width: 100%;
+      height: 340px;
+      @media screen and (min-width: 991px) {
+            width: 340px;
+            height: 340px;
+      }
+
+      &:hover {
+            filter: sepia(30%) contrast(105%);
+      }
+
+      .container__card {
+            width: 300px;
+
+            height: 52px;
+            left: 20px;
+      }
+}
+
+.cards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      border-radius: 25px;
+      margin-top: 35px;
+      margin-bottom: 35px;
+      justify-content: center;
+
+      @media screen and (min-width: 991px) {
+            background-color: #f6f6f6;
+            padding: 35px 30px 35px 30px;
+            gap: 2rem;
+      }
+      h3 {
+            white-space: wrap;
+            color: white;
+            font-size: 18px;
+            font-weight: 500;
+            margin: -10px 15px 20px 15px;
+      }
+}

@@ -1,0 +1,16 @@
+@use '../utils/' as *;
+
+footer {
+    height: 209px;
+    background-color: $darkcolor;
+    color: $lightcolor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
+    p {
+        font-size: 12px;
+        line-height: 17px;
+    }
+}
